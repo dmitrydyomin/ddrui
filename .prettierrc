@@ -1,0 +1,6 @@
+{
+  "importOrder": ["^[^./]", "^[./]"],
+  "importOrderSeparation": true,
+  "singleQuote": true,
+  "trailingComma": "all"
+}

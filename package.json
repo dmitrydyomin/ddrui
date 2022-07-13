@@ -1,0 +1,31 @@
+{
+  "name": "ddrui",
+  "version": "1.0.4",
+  "description": "Another React component library",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && cp src/styles.css lib",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "upload": "npm run build && npm version patch && npm publish"
+  },
+  "keywords": [],
+  "author": "Dmitry Dyomin <dma01x@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/react": "^18.0.15",
+    "react": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.5",
+    "reactstrap": "^9.1.1",
+    "swr": "^1.3.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "react-final-form": "^6.5.9"
+  }
+}
